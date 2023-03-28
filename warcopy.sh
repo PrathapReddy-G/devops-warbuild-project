@@ -1,2 +1,2 @@
-cp /root/.jenkins/workspace/docker-image-build/target/CloudGen-1.war	/root/.jenkins/workspace/docker-image-build
+cp /root/.jenkins/workspace/docker-image-build/target/prathap-1.war	/root/.jenkins/workspace/docker-image-build
 
