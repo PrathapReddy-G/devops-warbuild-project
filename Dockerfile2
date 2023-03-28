@@ -12,7 +12,7 @@ RUN tar -xvzf apache*.tar.gz
 RUN mv apache-tomcat-9.0.73/* /opt/Tomcat
 RUN java -version
 WORKDIR /opt/Tomcat/webapps
-COPY cloudgen-1.war /opt/Tomcat/webapps/
+COPY prathap-1.war /opt/Tomcat/webapps/
 EXPOSE 8080
 CMD ["/opt/Tomcat/bin/startup.sh", "run"]
 
@@ -31,6 +31,6 @@ CMD ["/opt/Tomcat/bin/startup.sh", "run"]
 ##RUN yum install vim -y
 #RUN java -version
 #WORKDIR /opt/Tomcat/webapps
-#COPY cloudgen.war /opt/Tomcat/webapps/
+#COPY prathap.war /opt/Tomcat/webapps/
 #EXPOSE 8080
 #CMD ["/opt/Tomcat/bin/startup.sh", "run"]
