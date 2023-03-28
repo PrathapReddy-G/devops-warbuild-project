@@ -27,7 +27,7 @@ pipeline
 
 		stage("Copying the War file to Job Location"){
 			steps{
-				sh cp '/root/.jenkins/workspace/warfile-pipeline-project/target/*.war /root/.jenkins/workspace/warfile-pipeline-project/' 
+				sh 'cp /root/.jenkins/workspace/warfile-pipeline-project/target/*.war /root/.jenkins/workspace/warfile-pipeline-project/' 
 
 		}
 	}
