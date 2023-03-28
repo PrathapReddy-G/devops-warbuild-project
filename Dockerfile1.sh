@@ -1,5 +1,5 @@
 FROM centos
-MAINTAINER ravindra ravindra.devops@gmail.com
+MAINTAINER prathap preddydevops5@gmail.com
 RUN sed -i 's/mirrorlist/#mirrorlist/g' /etc/yum.repos.d/CentOS-*
 RUN sed -i 's|#baseurl=http://mirror.centos.org|baseurl=http://vault.centos.org|g' /etc/yum.repos.d/CentOS-*
 RUN yum install -y java
@@ -16,7 +16,7 @@ COPY cloudgen-1.war /opt/Tomcat/webapps/
 EXPOSE 8080
 CMD ["/opt/Tomcat/bin/startup.sh", "run"]
 #FROM centos
-#MAINTAINER ravindra ravindra.devops@gmail.com
+#MAINTAINER prathap preddydevops5@gmail.com
 #RUN sed -i 's/mirrorlist/#mirrorlist/g' /etc/yum.repos.d/CentOS-*
 #RUN sed -i 's|#baseurl=http://mirror.centos.org|baseurl=http://vault.centos.org|g' /etc/yum.repos.d/CentOS-*
 #RUN mkdir /opt/Tomcat
